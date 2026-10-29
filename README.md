@@ -1,6 +1,6 @@
 ## Live Demo
 
-[View the live To-Do List](https://okoyo13.github.io/iyf-s12-week-05-okoyo13/)
+[View Live Site](https://okoyo13.github.io/iyf-s12-week-05-okoyo13/)
 
 # JavaScript DOM Manipulation
 
