@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Practice</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+
+      .container {
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+
+      #task-list li {
+        margin: 10px 0;
+      }
+
+      #task-list li span {
+        cursor: pointer;
+      }
+
+      #task-list li.completed span {
+        text-decoration: line-through;
+        color: gray;
+      }
+
+      .delete-task {
+        margin-left: 10px;
+      }
+
+      .error {
+        border: 2px solid red;
+      }
+
+      .error-message {
+        color: red;
+        font-size: 14px;
+        margin: 4px 0 10px;
+      }
+
+      .success-message {
+        color: green;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>DOM Practice</h1>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="#" class="nav-link" data-id="123" data-category="tech"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link" data-id="456" data-category="lifestyle"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link" data-id="789" data-category="business"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <article>
+        <h2 class="title">Article Title</h2>
+        <p class="content">This is the first paragraph.</p>
+        <p class="content">This is the second paragraph.</p>
+      </article>
+
+      <section>
+        <h2>Form Section</h2>
+        <form id="contact-form">
+          <input type="text" id="name" name="name" placeholder="Name" />
+          <input type="email" id="email" name="email" placeholder="Email" />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026</p>
+    </footer>
+
+    <div id="grandparent">
+      Grandparent
+      <div id="parent">
+        Parent
+        <div id="child">Child</div>
+      </div>
+    </div>
+
+    <h2>Delegated Task List</h2>
+
+    <input type="text" id="new-task" placeholder="Enter a task" />
+    <button type="button" id="add-task">Add Task</button>
+
+    <ul id="task-list">
+      <li>
+        <span>Learn JavaScript events</span>
+        <button type="button" class="delete-task">Delete</button>
+      </li>
+      <li>
+        <span>Practise event delegation</span>
+        <button type="button" class="delete-task">Delete</button>
+      </li>
+    </ul>
+    <script src="dom.js"></script>
+  </body>
+</html>
